@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "awsappsyncchatstarte-dev-20200116120002-authRole",
+            "UnauthRoleArn": "arn:aws:iam::905631193551:role/awsappsyncchatstarte-dev-20200116120002-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::905631193551:role/awsappsyncchatstarte-dev-20200116120002-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "awsappsyncchatstarte-dev-20200116120002-deployment",
+            "UnauthRoleName": "awsappsyncchatstarte-dev-20200116120002-unauthRole",
+            "StackName": "awsappsyncchatstarte-dev-20200116120002",
+            "StackId": "arn:aws:cloudformation:us-east-1:905631193551:stack/awsappsyncchatstarte-dev-20200116120002/a35191b0-3881-11ea-b5ba-12cb3b0f9c64"
+        },
+        "categories": {
+            "auth": {
+                "awsappsyncchatstartef422bc62": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "identityPoolName": "awsappsyncchatstartef422bc62_identitypool_f422bc62",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "awsapp_f422bc62_lambda_log_policy",
+    "openIdLambdaRoleName": "awsapp_f422bc62_openid_lambda_role",
+    "openIdRolePolicy": "awsapp_f422bc62_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "awsapp_f422bc62_openid_lambda_iam_policy",
+    "openIdLogPolicy": "awsapp_f422bc62_openid_lambda_log_policy",
+    "userPoolName": "awsappsyncchatstartef422bc62_userpool_f422bc62",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "awsappf422bc62_sns-role",
+    "roleExternalId": "awsappf422bc62_role_external_id",
+    "policyName": "awsappf422bc62-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "awsappf422bc62_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "awsappf422bc62_totp_lambda_role",
+    "mfaLambdaLogPolicy": "awsappf422bc62_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "awsappf422bc62_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "awsappf422bc62_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "awsappf422bc62_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "awsappf422bc62_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "awsappf422bc62_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "awsappsyncchatstartef422bc62",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default",
+    "usernameAttributes": [
+        "email"
+    ]
+}
